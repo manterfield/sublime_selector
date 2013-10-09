@@ -1,6 +1,8 @@
 #Sublime Text 2 plugin providing extra text selection options.
 
 ##Features
+- Slugify: slugify the selected text
+
 - Wrap: wrap selected text in whatever tags with a couple of clicks,
 		you can add tags yourself in the settings
 
@@ -10,3 +12,9 @@
 
 - Class: Convert selected text to a class name
 		 (strip non alphanumerics and convert to camelcase)
+
+##TODO
+- [ ] Test all the things!!
+- [ ] URL encode
+- [ ] Encoding un-f*cker
+- [ ] CSV/JSON/XML converter
