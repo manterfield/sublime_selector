@@ -1,0 +1,1 @@
+#Sublime Text 2 plugin providing extra text selection options.
