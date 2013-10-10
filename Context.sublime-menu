@@ -12,6 +12,13 @@
                 }
             },
             {
+                "caption": "URL Decode",
+                "command": "selector",
+                "args": {
+                    "command": "url_decode"
+                }
+            },
+            {
                 "caption": "Slugify",
                 "command": "selector",
                 "args": {

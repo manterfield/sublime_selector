@@ -9,6 +9,7 @@ SLUGIFY = 'slugify'
 WRAP = 'wrap'
 CLASSIFY = 'class'
 URL_ENCODE = 'url'
+URL_DECODE = 'url_decode'
 
 
 def alpha_num(text):
@@ -39,5 +40,9 @@ def wrap(text, open_tag, close_tag):
 
 
 def url_encode(text):
-    """URL encode a string (A.K.A percent encoding)."""
+    """URL encode a string."""
     return urllib.quote(text)
+
+def url_decode(text):
+    """Decode a URL encoded string."""
+    return urllib.unquote(text)
