@@ -14,7 +14,7 @@
 		 (strip non alphanumerics and convert to camelcase)
 
 ##TODO
-- [ ] Test all the things!!
-- [ ] URL encode
-- [ ] Encoding un-f*cker
-- [ ] CSV/JSON/XML converter
+[x] Test all the things!!
+[ ] URL encode
+[ ] Encoding un-f*cker
+[ ] CSV/JSON/XML converter
