@@ -25,5 +25,7 @@ class SelectorCommand(sublime_plugin.TextCommand):
             output_text = replace.classify(text)
         elif command == replace.WRAP:
             output_text = replace.wrap(text, **kwargs)
+        elif command == replace.URL_ENCODE:
+            output_text = replace.url_encode(text)
 
         return output_text

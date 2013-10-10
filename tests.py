@@ -54,3 +54,9 @@ class ReplaceTestCase(unittest.TestCase):
         output_text = replace.title(text)
         self.assertEqual(expected_text, output_text)
 
+    def test_url_encode(self):
+        text = 'my cool url'
+        expected_text = 'my%20cool%20url'
+        output_text = replace.url_encode(text)
+        self.assertEqual(expected_text, output_text)
+

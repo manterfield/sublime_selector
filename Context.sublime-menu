@@ -5,10 +5,10 @@
         "children":
         [
             {
-                "caption": "Alphanumeric",
+                "caption": "URL Encode",
                 "command": "selector",
                 "args": {
-                    "command": "alphanumeric"
+                    "command": "url"
                 }
             },
             {
@@ -16,6 +16,13 @@
                 "command": "selector",
                 "args": {
                     "command": "slugify"
+                }
+            },
+            {
+                "caption": "Alphanumeric",
+                "command": "selector",
+                "args": {
+                    "command": "alphanumeric"
                 }
             },
             {

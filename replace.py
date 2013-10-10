@@ -1,5 +1,6 @@
 from __future__ import unicode_literals
 import re
+import urllib
 
 
 ALPHA_NUM = 'alphanumeric'
@@ -7,6 +8,7 @@ TITLIFY = 'title'
 SLUGIFY = 'slugify'
 WRAP = 'wrap'
 CLASSIFY = 'class'
+URL_ENCODE = 'url'
 
 
 def alpha_num(text):
@@ -34,3 +36,8 @@ def classify(text):
 def wrap(text, open_tag, close_tag):
     """Wrap the text in tags... or anything really."""
     return ''.join((open_tag, text, close_tag, ))
+
+
+def url_encode(text):
+    """URL encode a string (A.K.A percent encoding)."""
+    return urllib.quote(text)

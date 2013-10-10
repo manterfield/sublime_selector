@@ -15,6 +15,6 @@
 
 ##TODO
 [x] Test all the things!!
-[ ] URL encode
+[x] URL encode
 [ ] Encoding un-f*cker
 [ ] CSV/JSON/XML converter
