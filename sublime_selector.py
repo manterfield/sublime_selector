@@ -1,6 +1,7 @@
 import sublime_plugin
 
 import replace
+import webtask
 
 
 class SelectorCommand(sublime_plugin.TextCommand):
@@ -29,5 +30,9 @@ class SelectorCommand(sublime_plugin.TextCommand):
             output_text = replace.url_encode(text)
         elif command == replace.URL_DECODE:
             output_text = replace.url_decode(text)
+        elif command == webtask.GOOGLE:
+            output_text = webtask.google_search(text)
+        elif command == webtask.STACK:
+            output_text = webtask.stackoverflow_search(text)
 
         return output_text

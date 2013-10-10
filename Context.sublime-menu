@@ -5,6 +5,20 @@
         "children":
         [
             {
+                "caption": "Google",
+                "command": "selector",
+                "args": {
+                    "command": "google"
+                }
+            },
+            {
+                "caption": "Stack Overflow",
+                "command": "selector",
+                "args": {
+                    "command": "stackoverflow"
+                }
+            },
+            {
                 "caption": "URL Encode",
                 "command": "selector",
                 "args": {
@@ -116,6 +130,15 @@
                             "command": "wrap",
                             "open_tag": "{",
                             "close_tag": "}"
+                        }
+                    },
+                    {
+                        "caption": "{}",
+                        "command": "selector",
+                        "args": {
+                            "command": "wrap",
+                            "open_tag": "[",
+                            "close_tag": "]"
                         }
                     }
                 ]

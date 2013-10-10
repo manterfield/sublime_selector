@@ -1,9 +1,10 @@
 import unittest
 
 import replace
+import webtask
+
 
 class ReplaceTestCase(unittest.TestCase):
-
     def test_alpha_numeric(self):
         text = 'abc123'
         expected_text = 'abc123'
@@ -65,4 +66,19 @@ class ReplaceTestCase(unittest.TestCase):
         expected_text = 'my cool url'
         output_text = replace.url_decode(text)
         self.assertEqual(expected_text, output_text)
+
+
+class WebTaskTestCase(unittest.TestCase):
+    # TODO:
+    # Mock webbrowser to make these tests a bit (a lot) more meaningful.
+    def test_google_search(self):
+        text = 'any search term'
+        output_text = webtask.google_search(text)
+        self.assertEqual(text, output_text)
+
+    def test_stackoverflow_search(self):
+        text = 'any search term'
+        output_text = webtask.stackoverflow_search(text)
+        self.assertEqual(text, output_text)
+
 
