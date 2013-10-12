@@ -20,7 +20,3 @@
 
 - **Class**: Convert selected text to a class name
 		 (strip non alphanumerics and convert to camelcase)
-
-##TODO
-[x] Test all the things!!
-[x] URL encode
