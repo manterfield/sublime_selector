@@ -1,7 +1,7 @@
 [
     {
-        "id": "Selector",
-        "caption": "Selector",
+        "id": "Search",
+        "caption": "Search string...",
         "children":
         [
             {
@@ -17,23 +17,30 @@
                 "args": {
                     "command": "stackoverflow"
                 }
-            },
+            }
+        ]
+    },
+    {
+        "id": "Convert",
+        "caption": "Convert to...",
+        "children":
+        [
             {
-                "caption": "URL Encode",
+                "caption": "URL encoded",
                 "command": "selector",
                 "args": {
                     "command": "url"
                 }
             },
             {
-                "caption": "URL Decode",
+                "caption": "URL decoded",
                 "command": "selector",
                 "args": {
                     "command": "url_decode"
                 }
             },
             {
-                "caption": "Slugify",
+                "caption": "Slugified",
                 "command": "selector",
                 "args": {
                     "command": "slugify"
@@ -47,114 +54,114 @@
                 }
             },
             {
-                "id": "Wrapper",
-                "caption": "Wrapper",
-                "children":
-                [
-                    {
-                        "caption": "<h1></h1>",
-                        "command": "selector",
-                        "args": {
-                            "command": "wrap",
-                            "open_tag": "<h1>",
-                            "close_tag": "</h1>"
-                        }
-                    },
-                    {
-                        "caption": "<h2></h2>",
-                        "command": "selector",
-                        "args": {
-                            "command": "wrap",
-                            "open_tag": "<h2>",
-                            "close_tag": "</h2>"
-                        }
-                    },
-                    {
-                        "caption": "<h3></h3>",
-                        "command": "selector",
-                        "args": {
-                            "command": "wrap",
-                            "open_tag": "<h3>",
-                            "close_tag": "</h3>"
-                        }
-                    },
-                    {
-                        "caption": "<div></div>",
-                        "command": "selector",
-                        "args": {
-                            "command": "wrap",
-                            "open_tag": "<div>",
-                            "close_tag": "</div>"
-                        }
-                    },
-                    {
-                        "caption": "<ul></ul>",
-                        "command": "selector",
-                        "args": {
-                            "command": "wrap",
-                            "open_tag": "<ul>",
-                            "close_tag": "</ul>"
-                        }
-                    },
-                    {
-                        "caption": "<ol></ol>",
-                        "command": "selector",
-                        "args": {
-                            "command": "wrap",
-                            "open_tag": "<ol>",
-                            "close_tag": "</ol>"
-                        }
-                    },
-                    {
-                        "caption": "<li></li>",
-                        "command": "selector",
-                        "args": {
-                            "command": "wrap",
-                            "open_tag": "<li>",
-                            "close_tag": "</li>"
-                        }
-                    },
-                    {
-                        "caption": "<p></p>",
-                        "command": "selector",
-                        "args": {
-                            "command": "wrap",
-                            "open_tag": "<p>",
-                            "close_tag": "</p>"
-                        }
-                    },
-                    {
-                        "caption": "{}",
-                        "command": "selector",
-                        "args": {
-                            "command": "wrap",
-                            "open_tag": "{",
-                            "close_tag": "}"
-                        }
-                    },
-                    {
-                        "caption": "{}",
-                        "command": "selector",
-                        "args": {
-                            "command": "wrap",
-                            "open_tag": "[",
-                            "close_tag": "]"
-                        }
-                    }
-                ]
-            },
-            {
-                "caption": "Title",
+                "caption": "Title Case",
                 "command": "selector",
                 "args": {
                     "command": "title"
                 }
             },
             {
-                "caption": "Class Name",
+                "caption": "CamelCase",
                 "command": "selector",
                 "args": {
                     "command": "class"
+                }
+            }
+        ]
+    },
+    {
+        "id": "Wrapper",
+        "caption": "Wrap with...",
+        "children":
+        [
+            {
+                "caption": "<h1></h1>",
+                "command": "selector",
+                "args": {
+                    "command": "wrap",
+                    "open_tag": "<h1>",
+                    "close_tag": "</h1>"
+                }
+            },
+            {
+                "caption": "<div></div>",
+                "command": "selector",
+                "args": {
+                    "command": "wrap",
+                    "open_tag": "<div>",
+                    "close_tag": "</div>"
+                }
+            },
+            {
+                "caption": "<ul></ul>",
+                "command": "selector",
+                "args": {
+                    "command": "wrap",
+                    "open_tag": "<ul>",
+                    "close_tag": "</ul>"
+                }
+            },
+            {
+                "caption": "<ol></ol>",
+                "command": "selector",
+                "args": {
+                    "command": "wrap",
+                    "open_tag": "<ol>",
+                    "close_tag": "</ol>"
+                }
+            },
+            {
+                "caption": "<li></li>",
+                "command": "selector",
+                "args": {
+                    "command": "wrap",
+                    "open_tag": "<li>",
+                    "close_tag": "</li>"
+                }
+            },
+            {
+                "caption": "<b></b>",
+                "command": "selector",
+                "args": {
+                    "command": "wrap",
+                    "open_tag": "<b>",
+                    "close_tag": "</b>"
+                }
+            },
+            {
+                "caption": "<p></p>",
+                "command": "selector",
+                "args": {
+                    "command": "wrap",
+                    "open_tag": "<p>",
+                    "close_tag": "</p>"
+                }
+            },
+            {
+                "caption": "%%",
+                "command": "selector",
+                "args": {
+                    "command": "wrap",
+                    "open_tag": "%",
+                    "close_tag": "%"
+                }
+            },
+            {
+                "caption": "<%%>",
+                "command": "selector",
+                "args": {
+                    "command": "wrap",
+                    "open_tag": "<%",
+                    "close_tag": "%>"
+                }
+            },
+            {
+                "caption": "<?php?>",
+                "command": "selector",
+                "args": {
+                    "command": "wrap",
+                    "open_tag": "<?php",
+                    "close_tag": "?>"
                 }
             }
         ]
