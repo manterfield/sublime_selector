@@ -26,7 +26,7 @@
 
 Install 'Selector' via package control or download this repo and save it to your Packages directory.
 
-##Adding your own wrapper tags
+###Adding your own wrapper tags
 
 Create a file in your Packages directory named Context.sublime-menu
 the content of the file should be in the structure below:
