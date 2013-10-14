@@ -34,7 +34,7 @@ the content of the file should be in the structure below:
 ```json
 [
     {
-        "id": "Wrap with..",
+        "id": "Wrapper",
         "children":
         [
             {
@@ -58,7 +58,7 @@ To add multiple it would look like this:
 ```json
 [
     {
-        "id": "Wrap with...",
+        "id": "Wrapper",
         "children":
         [
             {
