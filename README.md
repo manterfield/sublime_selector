@@ -1,6 +1,6 @@
-#Selector - Sublime Text 2 plugin providing extra text selection options.
+# Selector - Sublime Text 2 plugin providing extra text selection options.
 
-##Features
+## Features
 - **Google**: search the selected text on Google (opens in default browser)
 
 - **Stack Overflow**: search the selected text on SO (opens in default browser)
@@ -22,11 +22,11 @@
 		 (strip non alphanumerics and convert to camelcase)
 
 
-###Installation
+### Installation
 
 Install 'Selector' via package control or download this repo and save it to your Packages directory.
 
-###Adding your own wrapper tags
+### Adding your own wrapper tags
 
 Create a file in your Packages directory named Context.sublime-menu
 the content of the file should be in the structure below:
